@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // quitar cuando no se use github pages
+  base: '/',
+  // base: '/landing-react-cursos/', // <--- importante para GH Pages
 })
