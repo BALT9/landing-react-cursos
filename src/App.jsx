@@ -31,7 +31,7 @@ function App() {
       imagen: ChatbotLaravel,
       duracion: "40h",
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
-      inicio: "Inmediato",
+      inicio: "3 de Enero",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ function App() {
       imagen: ChatbotCloudApi,
       duracion: "40h",
       colorPrimario: "#25D366", // Verde WhatsApp
-      inicio: "Inmediato",
+      inicio: "2 de Enero",
     },
     {
       id: 4,
