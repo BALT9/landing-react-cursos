@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [react()],
   // quitar cuando no se use github pages
   base: '/',
-  // base: '/landing-react-cursos/', // <--- importante para GH Pages
+  //base: '/landing-react-cursos/', // <--- importante para GH Pages
 })

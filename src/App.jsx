@@ -6,6 +6,7 @@ import Angular from '/postAngular.jpg';
 import ChatbotLaravel from '/chatbotLaravel.png';
 import ChatbotCloudApi from '/chatbotCloudApi.png';
 import ReactImg from '/postReact.png';
+import n8n from '/n8n.png';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
       imagen: ChatbotLaravel,
       duracion: "40h",
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
-      inicio: "3 de Enero",
+      inicio: "",
     },
     {
       id: 3,
@@ -42,7 +43,7 @@ function App() {
       imagen: ChatbotCloudApi,
       duracion: "40h",
       colorPrimario: "#25D366", // Verde WhatsApp
-      inicio: "2 de Enero",
+      inicio: "",
     },
     {
       id: 4,
@@ -54,6 +55,17 @@ function App() {
       duracion: "40 horas",
       colorPrimario: "#61DAFB", // Azul React
       inicio: "2 de Enero",
+    },
+    {
+      id: 4,
+      titulo: "Curso/Taller de Automatización con n8n",
+      descripcion: "Aprende a desplegar, conectar e integrar n8n con diferentes aplicaciones y crea agentes de Inteligencia Artificial",
+      precio: "39",
+      moneda: "USD",
+      imagen: n8n,
+      duracion: "8 horas",
+      colorPrimario: "#ea4b71", // Rosa n8n
+      inicio: "1 de Marzo",
     },
   ];
 

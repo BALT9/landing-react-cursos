@@ -5,7 +5,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 export default function Hero({ cursos }) {
-  const cursosProximos = cursos.filter((curso) => curso.inicio !== "Inmediato");
+  const cursosProximos = cursos.filter((curso) => curso.inicio !== "");
 
   const responsiveOptions = [
     {
