@@ -65,7 +65,7 @@ export default function Hero({ cursos }) {
         <div className="w-full mt-12">
           {/* Título */}
           <div className="flex items-center gap-4 mb-6">
-            <span className="text-xs font-black uppercase tracking-widest text-slate-500 whitespace-nowrap">
+            <span className="text-xs font-black uppercase tracking-widest text-white whitespace-nowrap">
               Inician en pocos días
             </span>
             <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" />
