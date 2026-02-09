@@ -25,28 +25,6 @@ function App() {
     },
     {
       id: 2,
-      titulo: "Curso/Taller de Creación de Chatbots para WhatsApp Cloud Api Conectando con Laravel, Base de Datos e IA ",
-      descripcion: "Crea Chatbots, utilizando Laravel, base de datos, inteligencia artificial y despligue en servidores.",
-      precio: "29",
-      moneda: "USD",
-      imagen: ChatbotLaravel,
-      duracion: "40h",
-      colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
-      inicio: "",
-    },
-    {
-      id: 3,
-      titulo: "Curso/Taller de Creación de Chatbots para WhatsApp Cloud Api Conectando con Base de Datos e IA ",
-      descripcion: "Crea Chatbots, utilizando Laravel, base de datos, inteligencia artificial y despligue en servidores.",
-      precio: "29",
-      moneda: "USD",
-      imagen: ChatbotCloudApi,
-      duracion: "40h",
-      colorPrimario: "#25D366", // Verde WhatsApp
-      inicio: "",
-    },
-    {
-      id: 4,
       titulo: "Desarrollo Web Frontend con React/Next",
       descripcion: "Aprende React, el framework para crear aplicaciones Web con interfaces modernas y reactivas.",
       precio: "99.99",
@@ -57,7 +35,7 @@ function App() {
       inicio: "2 de Enero",
     },
     {
-      id: 4,
+      id: 3,
       titulo: "Curso/Taller de Automatización con n8n",
       descripcion: "Aprende a desplegar, conectar e integrar n8n con diferentes aplicaciones y crea agentes de Inteligencia Artificial",
       precio: "39",
@@ -66,6 +44,28 @@ function App() {
       duracion: "8 horas",
       colorPrimario: "#ea4b71", // Rosa n8n
       inicio: "1 de Marzo",
+    },
+    {
+      id: 4,
+      titulo: "Curso/Taller de Creación de Chatbots para WhatsApp Cloud Api Conectando con Laravel, Base de Datos e IA ",
+      descripcion: "Crea Chatbots, utilizando Laravel, base de datos, inteligencia artificial y despligue en servidores.",
+      precio: "29",
+      moneda: "USD",
+      imagen: ChatbotLaravel,
+      duracion: "40h",
+      colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
+      inicio: "",
+    },
+    {
+      id: 5,
+      titulo: "Curso/Taller de Creación de Chatbots para WhatsApp Cloud Api Conectando con Base de Datos e IA ",
+      descripcion: "Crea Chatbots, utilizando Laravel, base de datos, inteligencia artificial y despligue en servidores.",
+      precio: "29",
+      moneda: "USD",
+      imagen: ChatbotCloudApi,
+      duracion: "40h",
+      colorPrimario: "#25D366", // Verde WhatsApp
+      inicio: "",
     },
   ];
 

@@ -48,9 +48,9 @@ export default function Hero({ cursos }) {
 
         {/* Texto principal */}
         <div className="flex flex-col justify-center mb-12 lg:mb-0 lg:max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-blue-400 text-xs font-bold tracking-widest uppercase mb-6 w-fit">
-            <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-            Cupos limitados 2026
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold tracking-widest uppercase mb-6 w-fit">
+            <span className="flex h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+            Cursos 2026
           </div>
 
           <h1 className="text-[10vw] md:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
@@ -78,7 +78,7 @@ export default function Hero({ cursos }) {
             numScroll={1}
             responsiveOptions={responsiveOptions}
             circular
-            autoplayInterval={2500}
+            autoplayInterval={2000}
             className="px-0 sm:px-2"
             showIndicators
             showNavigators
@@ -88,18 +88,7 @@ export default function Hero({ cursos }) {
       </div>
 
       {/* Estilos para ocultar flechas en móviles y agregar espaciado en md */}
-      <style jsx>{`
-        @media (max-width: 767px) {
-          .p-carousel-prev, .p-carousel-next {
-            display: none !important;
-          }
-        }
-        @media (min-width: 768px) and (max-width: 1024px) {
-          .p-carousel .p-carousel-item {
-            padding: 0 0.5rem; /* Espaciado entre cards en md */
-          }
-        }
-      `}</style>
+      
     </section>
   );
 }

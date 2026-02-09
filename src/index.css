@@ -28,3 +28,20 @@ body {
     background-color: #fff;
   }
 }
+
+
+/* Ocultar flechas del carrusel en mobile */
+@media (max-width: 767px) {
+  .p-carousel-prev,
+  .p-carousel-next {
+    display: none !important;
+  }
+}
+
+/* Espaciado entre cards en tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .p-carousel .p-carousel-item {
+    padding: 0 0.5rem;
+  }
+}
+
