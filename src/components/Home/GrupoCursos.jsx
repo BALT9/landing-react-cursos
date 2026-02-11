@@ -26,20 +26,18 @@ export default function GrupoCursos({ grupo, cursos }) {
                 <span className="text-xs font-black uppercase tracking-widest text-white whitespace-nowrap">
                     {grupo}
                 </span>
-                <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" />
+                {/* <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" /> */}
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="">
                     <CursoGrande curso={cursoPrincipal} />
                 </div>
-
-                <div className="flex md:grid md:grid-cols-2 gap-4 overflow-x-auto md:overflow-x-visible py-2">
+                <div className="flex md:grid md:grid-cols-2 gap-2 overflow-x-auto py-2">
                     {otrosCursos.map((curso) => (
-                        <div key={curso.id} className="flex-shrink-0 md:flex-shrink-1 w-40 md:w-full">
+                        <div key={curso.id} className="w-40 md:w-full">
                             <CursoPequeno
                                 curso={curso}
-                            
                                 onClick={() => setActivo(cursos.indexOf(curso))}
                             />
                         </div>
