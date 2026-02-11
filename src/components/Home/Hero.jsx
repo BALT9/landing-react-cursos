@@ -39,10 +39,9 @@ export default function Hero({ cursos }) {
   );
 
   return (
-    <section className="relative bg-[#020617] text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
+    <section className="relative text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
       {/* Fondos decorativos */}
-      <div className="absolute top-[-10%] left-[-10%] w-[70%] h-[70%] bg-blue-600/20 blur-[120px] rounded-full animate-pulse" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-emerald-600/10 blur-[120px] rounded-full" />
+
 
       <div className="relative max-w-7xl mx-auto">
 

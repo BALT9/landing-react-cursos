@@ -22,6 +22,7 @@ function App() {
       duracion: "40 horas",
       colorPrimario: "#FF2D95", // Rojo Angular
       inicio: "2 de Enero",
+      grupo: "frontend",
     },
     {
       id: 2,
@@ -33,6 +34,7 @@ function App() {
       duracion: "40 horas",
       colorPrimario: "#61DAFB", // Azul React
       inicio: "2 de Enero",
+      grupo: "frontend",
     },
     {
       id: 3,
@@ -44,6 +46,7 @@ function App() {
       duracion: "8 horas",
       colorPrimario: "#ea4b71", // Rosa n8n
       inicio: "1 de Marzo",
+      grupo: "frontend",
     },
     {
       id: 4,
@@ -55,6 +58,7 @@ function App() {
       duracion: "40h",
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
       inicio: "",
+      grupo: "frontend",
     },
     {
       id: 5,
@@ -65,14 +69,24 @@ function App() {
       imagen: ChatbotCloudApi,
       duracion: "40h",
       colorPrimario: "#25D366", // Verde WhatsApp
-      inicio: "",
+      inicio: "Taller",
+      grupo: "taller",
     },
   ];
 
   return (
     <>
-      <Hero cursos={cursos}/>
-      <Cursos cursos={cursos}/>
+      <section className="relative bg-[#020617] text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
+
+        {/* Fondos decorativos */}
+        <div className="absolute top-[-10%] left-[-10%] w-[70%] h-[70%] bg-blue-600/20 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-emerald-600/10 blur-[120px] rounded-full" />
+        
+        <div>
+          <Hero cursos={cursos} />
+          <Cursos cursos={cursos} />
+        </div>
+      </section>
     </>
   )
 }
