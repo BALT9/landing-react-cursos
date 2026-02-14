@@ -76,17 +76,30 @@ function App() {
 
   return (
     <>
-      <section className="relative bg-[#020617] text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-black via-slate-950 to-black text-white overflow-hidden">
 
-        {/* Fondos decorativos */}
-        <div className="absolute top-[-10%] left-[-10%] w-[70%] h-[70%] bg-blue-600/20 blur-[120px] rounded-full animate-pulse" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-emerald-600/10 blur-[120px] rounded-full" />
-        
-        <div>
+        {/* Glow azul superior */}
+        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] 
+                  bg-blue-600/25 rounded-full blur-[140px]"></div>
+
+        {/* Glow azul inferior */}
+        <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] 
+                  bg-indigo-600/20 rounded-full blur-[140px]"></div>
+
+        {/* Grid sutil estilo código */}
+        <div className="absolute inset-0 
+      bg-[linear-gradient(rgba(59,130,246,0.06)_1px,transparent_1px),
+          linear-gradient(90deg,rgba(59,130,246,0.06)_1px,transparent_1px)]
+      bg-[size:50px_50px]">
+        </div>
+
+        <div className="relative z-10">
           <Hero cursos={cursos} />
           <Cursos cursos={cursos} />
         </div>
+
       </section>
+
     </>
   )
 }

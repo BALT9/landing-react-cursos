@@ -39,9 +39,8 @@ export default function Hero({ cursos }) {
   );
 
   return (
-    <section className="relative text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
+    <section className="relative  py-1 px-4 overflow-hidden">
       {/* Fondos decorativos */}
-
 
       <div className="relative max-w-7xl mx-auto">
 
@@ -52,18 +51,15 @@ export default function Hero({ cursos }) {
             Cursos 2026
           </div>
 
-          <h1 className="text-[10vw] md:text-6xl lg:text-7xl font-black leading-[0.9] mb-6 tracking-tight">
-            PROXIMOS <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400">
-              CURSOS
-            </span>
+          <h1 className="text-base md:text-5xl font-black leading-[0.9] mb-6">
+            PROXIMOS CURSOS
           </h1>
         </div>
 
         {/* Carrusel de cursos */}
         <div className="w-full mt-12">
           {/* Título */}
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-4">
             <span className="text-xs font-black uppercase tracking-widest text-white whitespace-nowrap">
               Inician en pocos días
             </span>
@@ -87,7 +83,7 @@ export default function Hero({ cursos }) {
       </div>
 
       {/* Estilos para ocultar flechas en móviles y agregar espaciado en md */}
-      
+
     </section>
   );
 }
