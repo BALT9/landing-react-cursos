@@ -3,7 +3,7 @@ import CursoGrande from './CursoGrande';
 import CursoPequeno from './CursoPequeno';
 
 
-export default function GrupoCursos({ grupo, cursos }) {
+export default function GrupoCursos({ grupo, cursos, numero }) {
     const [activo, setActivo] = useState(0);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export default function GrupoCursos({ grupo, cursos }) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div className="">
-                    <CursoGrande curso={cursoPrincipal} />
+                    <CursoGrande curso={cursoPrincipal} numero={numero} />
                 </div>
                 <div className="flex md:grid md:grid-cols-2 gap-2 overflow-x-auto py-2">
                     {otrosCursos.map((curso) => (
@@ -39,6 +39,7 @@ export default function GrupoCursos({ grupo, cursos }) {
                             <CursoPequeno
                                 curso={curso}
                                 onClick={() => setActivo(cursos.indexOf(curso))}
+                                numero={numero}
                             />
                         </div>
                     ))}

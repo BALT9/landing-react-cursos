@@ -1,4 +1,4 @@
-export default function CursoPequeno({ curso, onClick }) {
+export default function CursoPequeno({ curso, onClick, numero }) {
   return (
     <div
       onClick={onClick}

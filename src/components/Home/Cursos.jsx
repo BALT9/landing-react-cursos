@@ -1,6 +1,6 @@
 import GrupoCursos from "./GrupoCursos";
 
-export default function Cursos({ cursos }) {
+export default function Cursos({ cursos, numero }) {
   const cursosPorGrupo = cursos.reduce((acc, curso) => {
     const grupo = curso.grupo || 'otros';
     if (!acc[grupo]) acc[grupo] = [];
@@ -24,6 +24,7 @@ export default function Cursos({ cursos }) {
             key={grupo}
             grupo={grupo}
             cursos={cursosGrupo}
+            numero={numero}
           />
         ))}
       </div>

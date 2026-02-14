@@ -1,7 +1,11 @@
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
-export default function CursoGrande({ curso }) {
+export default function CursoGrande({ curso, numero }) {
   const accentColor = curso.colorPrimario || '#3b82f6';
+
+  const mensaje = `Hola, quiero inscribirme al curso "${curso.titulo}`;
+
+  const whatsappURL = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
   return (
     <div className="group flex flex-col bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_24px_-12px_rgba(59,130,246,0.25)] hover:border-slate-700
@@ -52,9 +56,12 @@ export default function CursoGrande({ curso }) {
           )}
         </div>
 
-        {/* Botón */}
-        <button
-          className="mt-auto w-full flex items-center justify-center gap-2 py-2 px-3 sm:py-2.5 sm:px-4 rounded-lg text-white text-sm sm:text-base font-semibold transition-all active:scale-95 group/btn overflow-hidden relative"
+        {/* Botón WhatsApp */}
+        <a
+          href={whatsappURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto w-full flex items-center justify-center gap-2 py-3 px-3 sm:py-2.5 sm:px-4 rounded-full text-white text-sm sm:text-base font-semibold transition-all active:scale-95 group/btn overflow-hidden relative"
           style={{ backgroundColor: accentColor }}
         >
           <div className="absolute inset-0 bg-white/10 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300" />
@@ -63,7 +70,8 @@ export default function CursoGrande({ curso }) {
             size={16}
             className="relative z-10 group-hover/btn:translate-x-1 transition-transform"
           />
-        </button>
+        </a>
+
       </div>
 
       {/* Borde inferior color primario */}

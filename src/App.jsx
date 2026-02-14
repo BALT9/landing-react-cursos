@@ -92,6 +92,8 @@ function App() {
     
   ];
 
+  const numero = 76588737;
+
   return (
     <>
       <section className="relative bg-gradient-to-br from-black via-slate-950 to-black text-white overflow-hidden">
@@ -112,8 +114,8 @@ function App() {
         </div>
 
         <div className="relative z-10">
-          <Hero cursos={cursos} />
-          <Cursos cursos={cursos} />
+          <Hero cursos={cursos} numero={numero} />
+          <Cursos cursos={cursos} numero={numero} />
         </div>
 
       </section>
