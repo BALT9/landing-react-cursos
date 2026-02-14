@@ -24,6 +24,7 @@ function App() {
       colorPrimario: "#FF2D95", // Rojo Angular
       inicio: "2 de Enero",
       grupo: "Curso Desarrollo Web Frontend",
+      orden: "3"
     },
     {
       id: 2,
@@ -36,6 +37,7 @@ function App() {
       colorPrimario: "#61DAFB", // Azul React
       inicio: "2 de Enero",
       grupo: "Curso Desarrollo Web Frontend",
+      orden: "4"
     },
     {
       id: 3,
@@ -46,7 +48,7 @@ function App() {
       imagen: n8n,
       duracion: "8 horas",
       colorPrimario: "#ea4b71", // Rosa n8n
-      inicio: "1 de Marzo",
+      inicio: "",
       grupo: "taller",
     },
     {
@@ -60,6 +62,7 @@ function App() {
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
       inicio: "",
       grupo: "taller",
+      orden: "1"
     },
     {
       id: 5,
@@ -70,7 +73,7 @@ function App() {
       imagen: ChatbotCloudApi,
       duracion: "40h",
       colorPrimario: "#25D366", // Verde WhatsApp
-      inicio: "Taller",
+      inicio: "",
       grupo: "taller",
     },
     {
@@ -84,7 +87,9 @@ function App() {
       colorPrimario: "#01af78", // Verde Vue
       inicio: "18 de Febrero",
       grupo: "Curso Desarrollo Web Frontend",
+      orden: "2"
     },
+    
   ];
 
   return (

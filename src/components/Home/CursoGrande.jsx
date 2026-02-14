@@ -7,12 +7,12 @@ export default function CursoGrande({ curso }) {
     <div className="group flex flex-col bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_24px_-12px_rgba(59,130,246,0.25)] hover:border-slate-700
                     w-full max-w-md md:max-w-lg">
 
-      {/* Imagen: mobile recortada, md completa */}
+      {/* Imagen */}
       <div className="relative w-full h-80 md:h-110">
         <img
           src={curso.imagen}
           alt={curso.titulo}
-          className="w-full h-full object-cover md:object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
         {/* Badge precio */}
@@ -24,9 +24,6 @@ export default function CursoGrande({ curso }) {
             </span>
           </span>
         </div>
-
-        {/* Degradado */}
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" /> */}
       </div>
 
       {/* Contenido */}
@@ -35,7 +32,7 @@ export default function CursoGrande({ curso }) {
           <h3 className="text-sm sm:text-lg font-semibold text-slate-50 leading-snug mb-1.5">
             {curso.titulo}
           </h3>
-          <p className="text-xs sm:text-sm md:text-sm text-slate-400 line-clamp-2 leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-400 line-clamp-2 leading-relaxed">
             {curso.descripcion}
           </p>
         </div>
@@ -68,6 +65,12 @@ export default function CursoGrande({ curso }) {
           />
         </button>
       </div>
+
+      {/* Borde inferior color primario */}
+      <div
+        className="h-0.5 w-full"
+        style={{ backgroundColor: accentColor }}
+      />
     </div>
   );
 }

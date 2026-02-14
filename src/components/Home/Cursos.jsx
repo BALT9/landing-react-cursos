@@ -15,7 +15,7 @@ export default function Cursos({ cursos }) {
 
 
       <div className="relative max-w-7xl mx-auto">
-        <h1 className="text-2xl font-black leading-tight md:text-5xl">
+        <h1 className="text-2xl font-black leading-tight md:text-5xl font-semibold">
           Cursos Disponibles
         </h1>
 

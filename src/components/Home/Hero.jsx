@@ -4,7 +4,10 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 export default function Hero({ cursos = [] }) {
-  const upcomingCourses = cursos.filter((curso) => curso.inicio);
+  const upcomingCourses = cursos
+    .filter((curso) => curso.orden)
+    .sort((a, b) => Number(a.orden) - Number(b.orden));
+
 
   const responsiveOptions = [
     { breakpoint: "1024px", numVisible: 3, numScroll: 1 },
@@ -36,7 +39,7 @@ export default function Hero({ cursos = [] }) {
             Cursos 2026
           </div>
 
-          <h1 className="text-2xl font-black leading-tight md:text-5xl">
+          <h1 className="text-2xl font-black leading-tight md:text-5xl font-semibold">
             Próximos cursos
           </h1>
         </div>
