@@ -3,10 +3,11 @@ import Cursos from './components/Home/Cursos'
 import Hero from './components/Home/Hero'
 
 import Angular from '/postAngular.jpg';
-import ChatbotLaravel from '/chatbotLaravel.png';
+import ChatbotLaravel from '/chatbotLaravel2.png';
 import ChatbotCloudApi from '/chatbotCloudApi.png';
 import ReactImg from '/postReact.png';
 import n8n from '/n8n.png';
+import PostVue from '/PostVue.jpg';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       duracion: "40 horas",
       colorPrimario: "#FF2D95", // Rojo Angular
       inicio: "2 de Enero",
-      grupo: "frontend",
+      grupo: "Curso Desarrollo Web Frontend",
     },
     {
       id: 2,
@@ -34,7 +35,7 @@ function App() {
       duracion: "40 horas",
       colorPrimario: "#61DAFB", // Azul React
       inicio: "2 de Enero",
-      grupo: "frontend",
+      grupo: "Curso Desarrollo Web Frontend",
     },
     {
       id: 3,
@@ -46,7 +47,7 @@ function App() {
       duracion: "8 horas",
       colorPrimario: "#ea4b71", // Rosa n8n
       inicio: "1 de Marzo",
-      grupo: "frontend",
+      grupo: "taller",
     },
     {
       id: 4,
@@ -58,7 +59,7 @@ function App() {
       duracion: "40h",
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
       inicio: "",
-      grupo: "frontend",
+      grupo: "taller",
     },
     {
       id: 5,
@@ -71,6 +72,18 @@ function App() {
       colorPrimario: "#25D366", // Verde WhatsApp
       inicio: "Taller",
       grupo: "taller",
+    },
+    {
+      id: 6,
+      titulo: "Desarrollo Web Frontend con Vue",
+      descripcion: "Aprende React, el framework para crear aplicaciones Web con interfaces modernas y reactivas.",
+      precio: "99.99",
+      moneda: "USD",
+      imagen: PostVue,
+      duracion: "40 horas",
+      colorPrimario: "#01af78", // Verde Vue
+      inicio: "18 de Febrero",
+      grupo: "Curso Desarrollo Web Frontend",
     },
   ];
 

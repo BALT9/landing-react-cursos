@@ -1,89 +1,69 @@
-import { Calendar, ArrowRight } from "lucide-react";
 import { Carousel } from "primereact/carousel";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
-export default function Hero({ cursos }) {
-  const cursosProximos = cursos.filter((curso) => curso.inicio !== "");
+export default function Hero({ cursos = [] }) {
+  const upcomingCourses = cursos.filter((curso) => curso.inicio);
 
   const responsiveOptions = [
-    {
-      breakpoint: "1024px",
-      numVisible: 3,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "768px",
-      numVisible: 3,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "767px",
-      numVisible: 1,
-      numScroll: 1,
-    },
+    { breakpoint: "1024px", numVisible: 3, numScroll: 1 },
+    { breakpoint: "768px", numVisible: 2, numScroll: 1 },
+    { breakpoint: "640px", numVisible: 1, numScroll: 1 },
   ];
 
-  const cursoTemplate = (curso) => (
-    <div className="relative bg-slate-900/80 backdrop-blur-sm rounded-2xl p-1 sm:p-2 md:p-3 border border-slate-800 shadow-md hover:shadow-xl transition-shadow duration-500">
-      {/* Imagen */}
-      <div className="relative h-full w-full rounded-xl overflow-hidden">
+  const renderCourse = (curso) => (
+    <div className="group relative rounded-2xl border border-slate-800 bg-slate-900/80 backdrop-blur-sm p-2 shadow-md transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+      <div className="overflow-hidden rounded-xl">
         <img
           src={curso.imagen}
           alt={curso.titulo}
-          className="w-full h-full object-cover"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
     </div>
   );
 
   return (
-    <section className="relative  py-1 px-4 overflow-hidden">
-      {/* Fondos decorativos */}
-
-      <div className="relative max-w-7xl mx-auto">
-
-        {/* Texto principal */}
-        <div className="flex flex-col justify-center mb-12 lg:mb-0 lg:max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white text-xs font-bold tracking-widest uppercase mb-6 w-fit">
-            <span className="flex h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+    <section className="relative overflow-hidden px-4 py-6">
+      <div className="mx-auto max-w-7xl">
+        {/* Header */}
+        <div className="mb-10 flex flex-col justify-center lg:max-w-2xl">
+          <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
+            <span className="h-2 w-2 animate-pulse rounded-full bg-yellow-500" />
+            <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
             Cursos 2026
           </div>
 
-          <h1 className="text-base md:text-5xl font-black leading-[0.9] mb-6">
-            PROXIMOS CURSOS
+          <h1 className="text-2xl font-black leading-tight md:text-5xl">
+            Próximos cursos
           </h1>
         </div>
 
-        {/* Carrusel de cursos */}
-        <div className="w-full mt-12">
-          {/* Título */}
-          <div className="flex items-center gap-4 mb-4">
-            <span className="text-xs font-black uppercase tracking-widest text-white whitespace-nowrap">
+        {/* Carousel Section */}
+        <div className="mt-6 w-full">
+          <div className="mb-2 flex items-center gap-4">
+            <span className="whitespace-nowrap text-xs tracking-widest text-white text-yellow-300 font-semibold">
               Inician en pocos días
             </span>
             <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" />
           </div>
 
           <Carousel
-            value={cursosProximos}
-            itemTemplate={cursoTemplate}
+            value={upcomingCourses}
+            itemTemplate={renderCourse}
             numVisible={3}
             numScroll={1}
             responsiveOptions={responsiveOptions}
             circular
-            autoplayInterval={2000}
-            className="px-0 sm:px-2"
+            autoplayInterval={2500}
             showIndicators
             showNavigators
+            className="sm:px-2"
           />
-
         </div>
       </div>
-
-      {/* Estilos para ocultar flechas en móviles y agregar espaciado en md */}
-
     </section>
   );
 }

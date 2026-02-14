@@ -20,13 +20,13 @@ export default function GrupoCursos({ grupo, cursos }) {
     const otrosCursos = cursos.filter((_, i) => i !== activo);
 
     return (
-        <div className="space-y-4 md:p-16">
+        <div className="space-y-4 md:p-16 py-6">
 
-            <div className="flex items-center gap-4 mb-6">
-                <span className="text-xs font-black uppercase tracking-widest text-white whitespace-nowrap">
+            <div className="mb-2 flex items-center gap-4">
+                <span className="whitespace-nowrap text-xs tracking-widest text-white py-2 text-yellow-300 font-semibold">
                     {grupo}
                 </span>
-                {/* <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" /> */}
+                <div className="h-px w-full bg-gradient-to-r from-slate-800 to-transparent" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

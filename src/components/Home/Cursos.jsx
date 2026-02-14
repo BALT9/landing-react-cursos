@@ -9,13 +9,13 @@ export default function Cursos({ cursos }) {
   }, {});
 
   return (
-    <section className="relative text-slate-100 py-20 px-4 sm:px-6 overflow-hidden">
+    <section className="relative text-slate-100 py-0 px-4 sm:px-6 overflow-hidden">
 
       {/* Fondos decorativos */}
 
 
       <div className="relative max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-2xl font-black leading-tight md:text-5xl">
           Cursos Disponibles
         </h1>
 
