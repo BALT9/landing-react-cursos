@@ -49,7 +49,7 @@ function App() {
       duracion: "8 horas",
       colorPrimario: "#ea4b71", // Rosa n8n
       inicio: "",
-      grupo: "taller",
+      grupo: "Taller",
     },
     {
       id: 4,
@@ -61,7 +61,7 @@ function App() {
       duracion: "40h",
       colorPrimario: "#FF2D20", // Rojo Laravel (Cambiado para que resalte)
       inicio: "",
-      grupo: "taller",
+      grupo: "Taller",
       orden: "1"
     },
     {
@@ -74,7 +74,7 @@ function App() {
       duracion: "40h",
       colorPrimario: "#25D366", // Verde WhatsApp
       inicio: "",
-      grupo: "taller",
+      grupo: "Taller",
     },
     {
       id: 6,
@@ -114,8 +114,8 @@ function App() {
         </div>
 
         <div className="relative z-10">
-          <Hero cursos={cursos} numero={numero} />
           <Cursos cursos={cursos} numero={numero} />
+          <Hero cursos={cursos} numero={numero} />
         </div>
 
       </section>

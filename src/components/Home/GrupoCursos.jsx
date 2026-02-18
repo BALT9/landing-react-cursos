@@ -20,7 +20,7 @@ export default function GrupoCursos({ grupo, cursos, numero }) {
     const otrosCursos = cursos.filter((_, i) => i !== activo);
 
     return (
-        <div className="space-y-4 md:py-16 py-6">
+        <div className="space-y-4 md:py-3 py-1">
 
             <div className="mb-2 flex items-center gap-4">
                 <span className="whitespace-nowrap text-xs tracking-widest text-white py-2 text-yellow-300 font-semibold">

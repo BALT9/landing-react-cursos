@@ -44,23 +44,18 @@ export default function Hero({ cursos = [], numero }) {
       <div className="mx-auto max-w-7xl">
 
         <div className="mb-10 flex flex-col justify-center lg:max-w-2xl">
-          <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
+          {/* <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
             <span className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
             <span className="h-2 w-2 animate-pulse rounded-full bg-yellow-500" />
             <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
             Cursos 2026
-          </div>
+          </div> */}
 
           <h1 className="text-2xl md:text-5xl font-black leading-tight font-semibold">
             Próximos cursos
           </h1>
         </div>
 
-        <img
-          src={logoBlumbit}
-          className="md:w-30 w-20 object-contain absolute md:right-50 right-10 top-10 md:top-15"
-          alt="Logo"
-        />
 
         <div className="mt-6 w-full">
           <div className="mb-2 flex items-center gap-4">
@@ -77,7 +72,7 @@ export default function Hero({ cursos = [], numero }) {
             numScroll={1}
             responsiveOptions={responsiveOptions}
             circular
-            autoplayInterval={2500}
+            autoplayInterval={5000}
             showIndicators
             showNavigators
             className="sm:px-2"
